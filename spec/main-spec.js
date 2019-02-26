@@ -21,4 +21,14 @@ describe('taxi fee', function () {
         let result = main(8,0);
         expect(result).toBe(11);
     })
+
+    it("8公里后的行驶",function(){
+        let result = main(14,0);
+        expect(result).toBe(18);
+    })
+
+    it("8公里后的行驶Ⅱ",function(){
+        let result = main(100,0);
+        expect(result).toBe(121);
+    })
 });

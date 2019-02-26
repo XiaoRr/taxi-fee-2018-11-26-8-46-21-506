@@ -4,5 +4,9 @@ module.exports = function main(distance,pauseTime) {
     if(distance <= 2){
         return 6;
     }
-    return Math.round((distance-2)*0.8)+6;
+    if(distance <= 8){
+        return Math.round((distance-2)*0.8+6);
+    }
+    return Math.round((distance-8)*1.2+10.8);
+
 };
