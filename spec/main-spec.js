@@ -31,4 +31,14 @@ describe('taxi fee', function () {
         let result = main(100,0);
         expect(result).toBe(121);
     })
+
+    it("停车费",function(){
+        let result = main(2,3);
+        expect(result).toBe(7);
+    })
+
+    it("停车费Ⅱ",function(){
+        let result = main(100,10);
+        expect(result).toBe(124);
+    })
 });
