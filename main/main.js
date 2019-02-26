@@ -1,5 +1,8 @@
 //distance:行驶距离 pauseTime:停车时间
 module.exports = function main(distance,pauseTime) {
     //console.log("Debug Info");
-    return 6;
+    if(distance <= 2){
+        return 6;
+    }
+    return Math.round((distance-2)*0.8)+6;
 };
